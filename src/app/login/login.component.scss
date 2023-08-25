@@ -1,0 +1,69 @@
+body {
+  background-color: #EEEEEE;
+}
+
+.button-container {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.login {
+  mat-card {
+    width: 400px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
+
+    .mat-toolbar{
+      background-color: rgb(33,150,243);
+      color: rgb(255,255,255);
+      flex-direction: column;
+      height: auto;
+      div{
+        padding: 8px;
+
+        .logo {
+          font-size: 48px;
+          width: 48px;
+          height: 48px;
+        }
+      } 
+    }
+
+    mat-card-content{
+      display: block;
+      padding: 16px;
+
+      form{
+        flex-direction: column;
+
+        button.mat-accent{
+          border-radius: 3px;
+          box-sizing: border-box;
+          -webkit-user-select: none;
+          user-select: none;
+          outline: 0;
+          border: 0;
+          display: block;
+          padding: 0 6px;
+          margin: 6px auto;
+          line-height: 36px;
+          min-height: 36px;
+          background: 0 0;
+          white-space: nowrap;
+          min-width: 150px;
+          text-align: center;
+          text-transform: uppercase;
+          font-weight: 500;
+          font-size: 14px;
+          text-decoration: none;
+          cursor: pointer;
+          overflow: hidden;
+          color: rgb(255,255,255);
+          background-color: rgb(255,64,129);
+        }
+      }
+    }
+  }
+}

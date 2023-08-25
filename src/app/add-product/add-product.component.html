@@ -1,0 +1,11 @@
+<h2>Add Product</h2>
+<form (submit)="addProduct()">
+  <mat-form-field>
+    <input matInput placeholder="Category" [(ngModel)]="newProduct.category" name="category" required>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Title" [(ngModel)]="newProduct.title" name="title" required>
+  </mat-form-field>
+  <!-- Add more input fields for other properties -->
+  <button mat-raised-button color="primary" type="submit">Add</button>
+</form>

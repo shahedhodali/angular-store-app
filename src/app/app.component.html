@@ -1,0 +1,31 @@
+<!-- <div>
+  <ng-container *ngIf="authService.isAuthenticated; else loginForm">
+
+    <div *ngIf="authService.userRole === 'admin'">
+      Welcome, Admin!
+    </div>
+    <div *ngIf="authService.userRole === 'user'">
+      Welcome, User!
+    </div>
+  </ng-container>
+  <ng-template #loginForm>
+    <app-login></app-login>
+  </ng-template>
+</div>
+<router-outlet></router-outlet> -->
+
+
+<div>
+  <ng-container *ngIf="authService.isAuthenticated; else loginForm">
+
+    <app-admin *ngIf="authService.userRole === 'admin'"></app-admin>
+
+    <div *ngIf="authService.userRole === 'user'">
+      Welcome, User!
+    </div>
+  </ng-container>
+  <ng-template #loginForm>
+    <app-login></app-login>
+  </ng-template>
+</div>
+

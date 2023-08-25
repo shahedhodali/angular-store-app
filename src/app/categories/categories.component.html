@@ -1,0 +1,9 @@
+<ng-container *ngIf="authService.isAuthenticated; let isAuthenticated" [@fadeInOut]>
+    <div *ngIf="isAuthenticated">
+      <div *ngFor="let category of categories">
+        <h3>{{ category.name }}</h3>
+        <app-products [categoryId]="category.id"></app-products>
+      </div>
+    </div>
+  </ng-container>
+  

@@ -1,0 +1,7 @@
+<div class="product-list" *ngIf="products.length > 0" [@fadeInOut]>
+    <div *ngFor="let product of products" class="product-card">
+      <img [src]="product.image" alt="{{ product.title }}" class="product-image">
+      <h4>{{ product.title }}</h4>
+      <p>Price: ${{ product.price }}</p>
+    </div>
+</div>
